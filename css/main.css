@@ -1,0 +1,198 @@
+* {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+}
+.sec-1 {
+    background: url(../images/cover.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sec-1 .text-cont {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    color: #f1f1f1;
+}
+.sec-1 .text-cont p {
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sec-1 .text-cont button {
+    padding: 5px 10px;
+    border: none;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    background: transparent;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.sec-2 {
+    padding: 20px 20px 50px;
+    color: #f1f1f1;
+}
+.sec-2 .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.sec-2 .container .text {
+    width: 350px;
+}
+.sec-2 .container .text p {
+    color: #ccc;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.sec-2 .container .text h2 {
+    line-height: 1.5;
+    color: #1f1f1f;
+}
+.sec-2 .container .text .lorem {
+    line-height: 1.6;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+.sec-2 .container img {
+    width: 350px;
+}
+.sec-3 {
+    padding: 20px 30px;
+    background-color: #eee;
+    text-align: center;
+}
+.sec-3 h2 {
+    padding: 5px 0;
+}
+.sec-3 p {
+    color: #aaa;
+    padding: 5px 0;
+}
+.sec-3 .team {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 100%;
+}
+.sec-3 .team .card {
+    width: 300px;
+    margin: auto;
+}
+.sec-3 .team .card img {
+    width: 100%;
+}
+.sec-3 .team .card .name {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #1f1f1f;
+}
+.sec-3 .team .card .job {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.sec-4 {
+    padding: 20px 20px 50px;
+    position: relative;
+}
+.sec-4 .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.sec-4 .container .map {
+    width: 350px;
+    height: 350px;
+    background-color: #eee;
+}
+.sec-4 .container .contact h2 {
+    padding: 0 0 20px;
+    width: 350px;
+}
+.sec-4 .container .contact .lorem {
+    line-height: 1.4;
+    color: #aaa;
+    width: 350px;
+}
+.sec-4 .container .contact .text {
+    padding: 20px 0;
+    color: #aaa;
+    width: 350px;
+}
+.sec-4 .container .contact .detail {
+    padding: 10px 0 ;
+    color: #aaa;
+    width: 350px;
+}
+.sec-4::before {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.sec-5 {
+    padding: 20px 30px;
+}
+.sec-5 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+.sec-5 .container .card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.sec-5 .container .card h2 {
+    transition: 1s ease;
+}
+.sec-5 .container .card p {
+    color: #aaa;
+}
+.sec-5 .container .card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,80%);
+    position: absolute;
+    z-index: -1;
+    transition: 1s ease;
+    display: none;
+    border-radius: 10px;
+}
+.sec-5 .container .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    display: none;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+.sec-5 .container .card:hover h2 {
+    color: #f1f1f1;
+}
+.sec-5 .container .card:hover::before {
+    display: block;
+}
+.sec-5 .container .card:hover img {
+    display: block;
+}
